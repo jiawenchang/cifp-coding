@@ -1,0 +1,48 @@
+Last login: Mon Apr 16 15:09:14 on ttys000
+8afbfae6:~ jiawen$ mkdir mydir
+8afbfae6:~ jiawen$ cd mydir
+8afbfae6:mydir jiawen$ cat mydir
+cat: mydir: No such file or directory
+8afbfae6:mydir jiawen$ touch myfile.txt
+8afbfae6:mydir jiawen$ touch file2.txt
+8afbfae6:mydir jiawen$ touch test.txt
+8afbfae6:mydir jiawen$ touch another.txt
+8afbfae6:mydir jiawen$ touch Example.sh
+8afbfae6:mydir jiawen$ nano myfile.txt
+8afbfae6:mydir jiawen$ nano myfile.txt
+8afbfae6:mydir jiawen$ nano myfile.txt
+8afbfae6:mydir jiawen$ nano file2.txt
+8afbfae6:mydir jiawen$ nano test.txt
+8afbfae6:mydir jiawen$ ls myfile.txt
+myfile.txt
+8afbfae6:mydir jiawen$ man ls myfile.txt
+
+
+
+
+
+
+
+LS(1)                     BSD General Commands Manual                    LS(1)
+
+NAME
+     ls -- list directory contents
+
+SYNOPSIS
+     ls [-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1] [file ...]
+
+DESCRIPTION
+     For each operand that names a file of a type other than directory, ls
+     displays its name as well as any requested, associated information.  For
+     each operand that names a file of type directory, ls displays the names
+     of files contained within that directory, as well as any requested, asso-
+     ciated information.
+
+     If no operands are given, the contents of the current directory are dis-
+     played.  If more than one operand is given, non-directory operands are
+     displayed first; directory and non-directory operands are sorted sepa-
+     rately and in lexicographical order.
+
+     The following options are available:
+
+:

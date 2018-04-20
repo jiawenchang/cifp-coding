@@ -1,0 +1,45 @@
+.calculator-wrapper{
+    width: 500px;
+    margin: auto;
+    background: #ff7766;
+}
+
+.title{
+    height: 55px;
+    background: grey;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.calctext{
+    height: 100px;
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.btn-group.calc-buttons {
+  display: flex;
+}
+
+.calc-buttons .btn {
+  flex: 1;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.submit-button{
+    font-size: 70px;
+    font-weight: 900;
+}
+#clearall{
+    width:50%;
+    float: right;
+}
+
+#delete{
+    width:50%;
+}

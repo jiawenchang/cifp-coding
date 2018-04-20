@@ -1,0 +1,29 @@
+2D ARRAY
+
+var items = [
+[0,1]
+[0,2]
+[0,3]
+]
+
+SWITCH (Works like if else)
+Var x = 20,
+switch(x){
+
+Case 9
+   console.log("9");
+break; // break out of loop when done, or else there's a "fall-through"
+
+default
+   console.log("not found")
+
+}
+
+WHILE (is isolated. does not reference any information before the word "while")
+...
+while (t < 15){
+    ...
+
+} (while loop breaks once criteria is not met)
+
+do-while 

@@ -1,0 +1,11 @@
+#rotatingImages {
+  position: relative;
+  width: 200px;
+  height: 250px;
+}
+.images {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

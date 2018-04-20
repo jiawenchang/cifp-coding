@@ -1,0 +1,98 @@
+Last login: Thu Apr 12 08:04:33 on console
+8afbf552:~ jiawen$ ls | head-n 3 >first_files.txt
+-bash: head-n: command not found
+8afbf552:~ jiawen$ ls|head -n 3 >first_files.txt
+8afbf552:~ jiawen$ ls | head -n 3>first_files.txt
+head: option requires an argument -- n
+usage: head [-n lines | -c bytes] [file ...]
+8afbf552:~ jiawen$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8afbf552:~ jiawen$ ls| head -n 3 >first_files.txt
+8afbf552:~ jiawen$ cat first_files.txt
+Applications
+Desktop
+Documents
+8afbf552:~ jiawen$ ls| head -n 3 >first_files.txt
+8afbf552:~ jiawen$ ls
+Applications		Library			Pictures
+Desktop			MacKeeper Backups	Public
+Documents		Movies			first_files.txt
+Downloads		Music
+8afbf552:~ jiawen$ cat first_files.txt
+Applications
+Desktop
+Documents
+8afbf552:~ jiawen$ ls
+Applications		Library			Pictures
+Desktop			MacKeeper Backups	Public
+Documents		Movies			first_files.txt
+Downloads		Music
+8afbf552:~ jiawen$ ls| head -n 3
+Applications
+Desktop
+Documents
+8afbf552:~ jiawen$ ls| head -n 3 >first_files.txt
+8afbf552:~ jiawen$ cat first_files.txt 
+Applications
+Desktop
+Documents
+8afbf552:~ jiawen$ ls| head -n 6 > first_files.txt
+8afbf552:~ jiawen$ cat first_files.txt 
+Applications
+Desktop
+Documents
+Downloads
+Library
+MacKeeper Backups
+8afbf552:~ jiawen$ ls| head -n 6 >> first_files.txt
+8afbf552:~ jiawen$ cat first_files.txt 
+Applications
+Desktop
+Documents
+Downloads
+Library
+MacKeeper Backups
+Applications
+Desktop
+Documents
+Downloads
+Library
+MacKeeper Backups
+8afbf552:~ jiawen$ ls| head -n 6 >> first_files.txt
+8afbf552:~ jiawen$ date
+Thu 12 Apr 2018 10:28:36 BST
+8afbf552:~ jiawen$ date >>executions.log
+8afbf552:~ jiawen$ nano
+8afbf552:~ jiawen$ pwd
+/Users/jiawen
+8afbf552:~ jiawen$ nano
+8afbf552:~ jiawen$ ls
+Applications		MacKeeper Backups	executions.log
+Desktop			Movies			first_files.txt
+Documents		Music			hello.txt
+Downloads		Pictures
+Library			Public
+8afbf552:~ jiawen$ cat hello.txt
+hellotxtOOOOOO≈
+8afbf552:~ jiawen$ nano hello.txt
+8afbf552:~ jiawen$ cat hello.txt
+
+hellotxtOOOOOO≈
+hello txt 
+8afbf552:~ jiawen$ vim
+8afbf552:~ jiawen$ 

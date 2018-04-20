@@ -1,0 +1,75 @@
+Last login: Tue Apr 17 09:05:45 on console
+8afbf74b:~ jiawen$ 
+8afbf74b:~ jiawen$ touch dummy.txt
+8afbf74b:~ jiawen$ nano dummy.txt
+8afbf74b:~ jiawen$ sort dummy.txt
+hello my name is 
+8afbf74b:~ jiawen$ nano dummy.txt
+8afbf74b:~ jiawen$ sort dummy.txt
+ is 
+ my
+ name
+hello
+8afbf74b:~ jiawen$ nano dummy.txt
+8afbf74b:~ jiawen$ sort dummy.txt
+hello
+is 
+my
+name
+8afbf74b:~ jiawen$ pwd
+/Users/jiawen
+8afbf74b:~ jiawen$ mkdir dir
+8afbf74b:~ jiawen$ mkdir dir2
+8afbf74b:~ jiawen$ cp dir dir2
+cp: dir is a directory (not copied).
+8afbf74b:~ jiawen$ cp -R dir dir2
+8afbf74b:~ jiawen$ ls -a
+.			.vscode			abc.txt
+..			Applications		bash-exercise
+.CFUserTextEncoding	Desktop			dir
+.DS_Store		Documents		dir2
+.Trash			Downloads		dummy.txt
+.bash_history		Library			executions.log
+.bash_sessions		MacKeeper Backups	first_files.txt
+.config			Movies			hello.txt
+.npm			Music			mydir
+.vimdiff.swp		Pictures
+.viminfo		Public
+8afbf74b:~ jiawen$ ls -t
+Desktop			mydir			Pictures
+dir2			bash-exercise		Movies
+dir			abc.txt			MacKeeper Backups
+dummy.txt		hello.txt		Music
+Downloads		executions.log		Public
+Library			first_files.txt
+Documents		Applications
+8afbf74b:~ jiawen$ ls -r
+mydir			bash-exercise		Library
+hello.txt		abc.txt			Downloads
+first_files.txt		Public			Documents
+executions.log		Pictures		Desktop
+dummy.txt		Music			Applications
+dir2			Movies
+dir			MacKeeper Backups
+8afbf74b:~ jiawen$ man
+What manual page do you want?
+8afbf74b:~ jiawen$ ls/ grep"a"
+-bash: ls/: No such file or directory
+8afbf74b:~ jiawen$ ls/grep"a"
+-bash: ls/grepa: No such file or directory
+8afbf74b:~ jiawen$ ls | grep"a"
+-bash: grepa: command not found
+8afbf74b:~ jiawen$ ls | grep "a"
+Applications
+Downloads
+Library
+MacKeeper Backups
+abc.txt
+bash-exercise
+8afbf74b:~ jiawen$ ls | wc-w
+-bash: wc-w: command not found
+8afbf74b:~ jiawen$ ls|wc-w
+-bash: wc-w: command not found
+8afbf74b:~ jiawen$ ls | wc-l
+-bash: wc-l: command not found
+8afbf74b:~ jiawen$ ls
