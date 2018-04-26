@@ -1,0 +1,161 @@
+Last login: Wed Apr 25 13:02:30 on ttys000
+8afbc65c:~ jiawen$ ls
+Applications		Music			dummy.txt
+Desktop			Pictures		executions.log
+Documents		Public			first_files.txt
+Downloads		abc.txt			hello.txt
+Library			bash-exercise		mydir
+MacKeeper Backups	dir
+Movies			dir2
+8afbc65c:~ jiawen$ cat hello.txt 
+
+hellotxtOOOOOO≈
+hello txt 
+8afbc65c:~ jiawen$ cat hello.txt > ll.log
+8afbc65c:~ jiawen$ pwd
+/Users/jiawen
+8afbc65c:~ jiawen$ echo $?
+0
+8afbc65c:~ jiawen$ touch script.sh;./myscript.sh
+-bash: ./myscript.sh: No such file or directory
+8afbc65c:~ jiawen$ 
+8afbc65c:~ jiawen$ echo $?
+127
+8afbc65c:~ jiawen$ cd/user/bin
+-bash: cd/user/bin: No such file or directory
+8afbc65c:~ jiawen$ cd /user/bin
+-bash: cd: /user/bin: No such file or directory
+8afbc65c:~ jiawen$ ls b*
+file.bs		file1.html	file2.html	file3.html	output.txt
+file.sh		file1.js	file2.js	file3.js	standrews.txt
+8afbc65c:~ jiawen$ cd
+8afbc65c:~ jiawen$ ls.
+-bash: ls.: command not found
+8afbc65c:~ jiawen$ ls .
+Applications		Music			dummy.txt
+Desktop			Pictures		executions.log
+Documents		Public			first_files.txt
+Downloads		abc.txt			hello.txt
+Library			bash-exercise		ll.log
+MacKeeper Backups	dir			mydir
+Movies			dir2			script.sh
+8afbc65c:~ jiawen$ cd
+8afbc65c:~ jiawen$ clear
+
+8afbc65c:~ jiawen$ touch .hiddenfile
+8afbc65c:~ jiawen$ ls
+Applications		Music			dummy.txt
+Desktop			Pictures		executions.log
+Documents		Public			first_files.txt
+Downloads		abc.txt			hello.txt
+Library			bash-exercise		ll.log
+MacKeeper Backups	dir			mydir
+Movies			dir2			script.sh
+8afbc65c:~ jiawen$ ls .
+Applications		Music			dummy.txt
+Desktop			Pictures		executions.log
+Documents		Public			first_files.txt
+Downloads		abc.txt			hello.txt
+Library			bash-exercise		ll.log
+MacKeeper Backups	dir			mydir
+Movies			dir2			script.sh
+8afbc65c:~ jiawen$ ls \.
+Applications		Music			dummy.txt
+Desktop			Pictures		executions.log
+Documents		Public			first_files.txt
+Downloads		abc.txt			hello.txt
+Library			bash-exercise		ll.log
+MacKeeper Backups	dir			mydir
+Movies			dir2			script.sh
+8afbc65c:~ jiawen$ ls -a
+.			.vscode			bash-exercise
+..			Applications		dir
+.CFUserTextEncoding	Desktop			dir2
+.DS_Store		Documents		dummy.txt
+.Trash			Downloads		executions.log
+.bash_history		Library			first_files.txt
+.bash_sessions		MacKeeper Backups	hello.txt
+.config			Movies			ll.log
+.hiddenfile		Music			mydir
+.npm			Pictures		script.sh
+.vimdiff.swp		Public
+.viminfo		abc.txt
+8afbc65c:~ jiawen$ man ls
+8afbc65c:~ jiawen$ man ls
+8afbc65c:~ jiawen$ ls *bob*
+ls: *bob*: No such file or directory
+8afbc65c:~ jiawen$ ls *ab*
+abc.txt
+8afbc65c:~ jiawen$ cd /usr/bin
+8afbc65c:bin jiawen$ ls *ab*
+crontab		iptab5.18	tab2space
+iptab		snmptable	tabs
+8afbc65c:bin jiawen$ touch fruit.txt
+touch: fruit.txt: Operation not permitted
+8afbc65c:bin jiawen$ cd Users/jiawen
+-bash: cd: Users/jiawen: Not a directory
+8afbc65c:bin jiawen$ ls /
+Applications			etc
+Library				home
+Network				installer.failurerequests
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+8afbc65c:bin jiawen$ ls /Users/jiawen/
+Applications		Music			dummy.txt
+Desktop			Pictures		executions.log
+Documents		Public			first_files.txt
+Downloads		abc.txt			hello.txt
+Library			bash-exercise		ll.log
+MacKeeper Backups	dir			mydir
+Movies			dir2			script.sh
+8afbc65c:bin jiawen$ cd /Users/jiawen/
+8afbc65c:~ jiawen$ touch fruit.txt
+8afbc65c:~ jiawen$ touch fruit.txt
+8afbc65c:~ jiawen$ nano fruit.txt
+8afbc65c:~ jiawen$ egrep "m" fruit.txt
+Mark watermelons 12
+Annes mangoes 7
+Oliver, rockmelons, 2
+Betty limes 14
+8afbc65c:~ jiawen$ egrep "^m"fruit.txt
+nnn  
+egrep "^M" fruit.txt    			
+pwd
+clear
+q!
+b bjk                                
+^C
+8afbc65c:~ jiawen$ egrep "^M" fruit.txt
+Mark watermelons 12
+Mark, grapes, 39
+8afbc65c:~ jiawen$ egrep "[1-5]" fruit.txt
+Fred apples 20
+Susy oranges 5
+Mark watermelons 12
+robert pears 4
+Susy oranges 12
+Mark, grapes, 39
+greg pineapples 3
+Oliver, rockmelons, 2
+Betty limes 14
+8afbc65c:~ jiawen$ egrep "[1-5]$" fruit.txt
+Susy oranges 5
+Mark watermelons 12
+robert pears 4
+Susy oranges 12
+greg pineapples 3
+Oliver, rockmelons, 2
+Betty limes 14
+8afbc65c:~ jiawen$ egrep "^[^A-Z]" fruit.txt
+robert pears 4
+greg pineapples 3
+8afbc65c:~ jiawen$ egrep"[A-Z][a-z]+[0-9]" fruit.txt
+-bash: egrep[A-Z][a-z]+[0-9]: command not found
+8afbc65c:~ jiawen$ egrep"[A-Z][a-z]+[0-9]" fruit.txt
+-bash: egrep[A-Z][a-z]+[0-9]: command not found
+8afbc65c:~ jiawen$ egrep "[A-Z][a-z]+[0-9]" fruit.txt
+8afbc65c:~ jiawen$ 
