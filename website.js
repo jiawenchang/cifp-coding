@@ -1,30 +1,32 @@
-   $(".image img:gt(0)").hide();
+var slideIndex = 1;
+showSlides(slideIndex);
 
-  x = setInterval(function() {
-    $(".image :first-child")
-      .slideUp()
-      .next("img")
-      .slideDown()
-      .end()
-      .appendTo(".image");
-  }, 9000);
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
 
-  // setInterval(run some function, every x seconds)
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
 
-  $(".image")
-    .click(function() {
-      console.log("image stopped");
-      clearInterval(x);
-    })
-    .dblclick(function() {
-      console.log("image resumed");
-      x = setInterval(function myFunction() {
-        $(".image :first-child")
-          .slideUp()
-          .next("img")
-          .slideDown()
-          .end()
-          .appendTo(".image");
-      }, 9000);
-    });
-});
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("pictures");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
